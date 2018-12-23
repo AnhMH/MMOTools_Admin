@@ -1,44 +1,37 @@
-<header class="main-header">
-    <!-- Logo -->
-    <a href="<?php echo $BASE_URL;?>" class="logo">
-        <span class="logo-lg"></span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-        <!-- Sidebar toggle button-->
-        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-            <span class="sr-only">Toggle navigation</span>
-        </a>
-        <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-                <!-- User Account: style can be found in dropdown.less -->
-                <li class="dropdown user user-menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="<?php echo $AppUI['avatar']; ?>" class="user-image" alt="User Image">
-                        <span class="hidden-xs"><?php echo $AppUI['display_name']; ?></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <!-- User image -->
-                        <li class="user-header">
-                            <img src="<?php echo $AppUI['avatar']; ?>" class="img-circle" alt="User Image">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+            
+            <a href="javascript:void(0);" class="bars"></a>
+            
+            <a class="navbar-brand text-center" href="<?php $BASE_URL;?>"><img src="" title="" alt=""></a>
+        </div>
+        
+        
 
-                            <p>
-                                <?php echo $AppUI['display_name']; ?>
-                                <small><?php !empty($AppUI['created']) ? date('Y-m-d', $AppUI['created']) : '' ;?></small>
-                            </p>
-                        </li>
-                        <!-- Menu Footer-->
-                        <li class="user-footer">
-                            <div class="pull-left">
-                                <a href="<?php echo $BASE_URL; ?>/admins/updateprofile" class="btn btn-default btn-flat"><?php echo __('LABEL_UPDATE_PROFILE'); ?></a>
-                            </div>
-                            <div class="pull-right">
-                                <a href="<?php echo $BASE_URL; ?>/login/logout" class="btn btn-default btn-flat"><?php echo __('LABEL_SIGN_OUT'); ?></a>
-                            </div>
-                        </li>
-                    </ul>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav top-menu">
+                <li><a href="#"><?php echo __('Pricing')?></a></li>
+            </ul>
+            <ul class="nav navbar-nav top-menu right mr0">
+                <li>
+                    <div class="btn-group" style="margin-top: 7px; margin-left: 7px;">
+                        <button type="button" class="btn btn-white waves-effect bg-white col-black">EN</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu" style="min-width: 65px; text-align: center; margin-top: 0px!important;">
+                            <?php if(!empty($lang))
+                            foreach ($lang as $row) {
+                            ?>
+                            <li><a class="waves-effect waves-block p0" href="<?php $BASE_URL;?>language?l=<?=$row?>"><?=strtoupper($row)?></a></li>
+                            <?php }?>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
