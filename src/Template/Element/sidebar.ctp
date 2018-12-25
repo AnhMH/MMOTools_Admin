@@ -26,8 +26,8 @@
                         <span><?php echo __('Dashboard')?></span>
                     </a>
                 </li>
-                <li class="<?=($controller == "facebook_accounts")?"active":""?>">
-                    <a href="<?php echo __('facebook_accounts')?>">
+                <li class="<?=($controller == "fbaccounts")?"active":""?>">
+                    <a href="<?php echo $BASE_URL;?>/fbaccounts">
                         <i class="fa fa-facebook-official fix-iconfa-sidebar" aria-hidden="true"></i>
                         <span><?php echo __('Facebook accounts')?></span>
                     </a>

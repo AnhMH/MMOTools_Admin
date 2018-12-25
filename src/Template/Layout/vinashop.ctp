@@ -10,14 +10,14 @@
     
     <!-- Facebook open graph tags -->
     <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content="VTCreators"/>
+    <meta property="og:site_name" content="hoanganhonline"/>
     <meta property="og:url" content="<?php echo $current_url;?>"/>
     <meta property="og:title" content=""/>
     <meta property="og:description" content=""/>
 
     <!-- Twitter card tags -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:site" content="@vtcreators"/>
+    <meta name="twitter:site" content="hoanganhonline"/>
     <meta name="twitter:title" content=""/>
     <meta name="twitter:description" content=""/>
     <!-- Favicon-->
