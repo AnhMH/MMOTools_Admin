@@ -16,3 +16,4 @@ Configure::write('API.url_fbaccounts_list', 'fbaccounts/list');
 Configure::write('API.url_fbaccounts_detail', 'fbaccounts/detail');
 Configure::write('API.url_fbaccounts_addupdate', 'fbaccounts/addupdate');
 Configure::write('API.url_fbaccounts_all', 'fbaccounts/all');
+Configure::write('API.url_fbaccounts_gettokenurl', 'fbaccounts/gettokenurl');

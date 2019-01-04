@@ -28,4 +28,12 @@ class AjaxController extends AppController {
         $this->autoRender = false;
         include ('Bus/Ajax/orderadd.php');
     }
+    
+    /**
+     * Ajax get token
+     */
+    public function gettoken() {
+        $this->autoRender = false;
+        include ('Bus/Ajax/gettoken.php');
+    }
 }

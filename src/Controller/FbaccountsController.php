@@ -15,4 +15,11 @@ class FbaccountsController extends AppController {
     public function index() {
         include ('Bus/Fbaccounts/index.php');
     }
+    
+    /**
+     * Update
+     */
+    public function update($id = '') {
+        include ('Bus/Fbaccounts/update.php');
+    }
 }

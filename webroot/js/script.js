@@ -688,7 +688,8 @@
             _action   = _form.data("action-token");
             _redirect = _form.data("redirect");
             _data     = _form.serialize();
-            _data     = _data + '&' + $.param({token:token});
+            _data     = _data + '&' + $.param({'_csrfToken':token});
+            console.log(_data);
             $(".page-loader-action").fadeIn();
             if(!_form.hasClass('disable')){
                 _form.addClass('disable');

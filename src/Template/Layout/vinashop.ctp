@@ -47,7 +47,7 @@
         var BASE       = '<?php echo $BASE_URL;?>';
         var CURRENT_URL= '<?php echo $current_url;?>';
         var list_chart = [];
-        var token      = '';
+        var token      = '<?php echo $this->request->getParam('_csrfToken');?>';
         var module     = '';
         var Lang = {};
         Lang["yes"]     = '<?php echo __('Yes')?>';
@@ -166,7 +166,7 @@
     <!-- Custom Js -->
     <script src="<?php echo $BASE_URL;?>/js/admin.js"></script>
     <script src="<?php echo $BASE_URL;?>/js/analytics.js"></script>
-    <script src="<?php echo $BASE_URL;?>/js/script.js"></script>
+    <script src="<?php echo $BASE_URL;?>/js/script.js?<?php echo time();?>"></script>
 </body>
 
 </html>
